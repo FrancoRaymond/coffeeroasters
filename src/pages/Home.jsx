@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Collection from '../components/home/Collection'
 import Chooseus from '../components/home/Chooseus'
+import Howitworks from '../components/home/Howitworks'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </div>
       <Collection /> 
       <Chooseus />
+      <Howitworks />
     </div>
   )
 }
