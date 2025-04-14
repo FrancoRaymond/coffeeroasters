@@ -40,9 +40,9 @@ const Navbar = () => {
       ) : (
         <nav className={`${size < 640 ? isMenuOpen ? 'absolute block top-14 h-screen left-0 right-0 mx-auto w-full' : 'hidden' : ''}`}>
           <ul className={`flex gap-5 ${size < 640 ? 'flex-col items-center h-fit w-full' : 'flex-row'}`}>
-            <li><Link onClick={closeMenu} to="/home">HOME</Link></li>
-            <li><Link onClick={closeMenu} to="/about">ABOUT</Link></li>
-            <li><Link onClick={closeMenu} to="/createplan">CREATE YOUR PLAN</Link></li>
+            <li className='hover:text-[#0e8684] transition duration-300'><Link onClick={closeMenu} to="/home">HOME</Link></li>
+            <li className='hover:text-[#0e8684] transition duration-300'><Link onClick={closeMenu} to="/about">ABOUT</Link></li>
+            <li className='hover:text-[#0e8684] transition duration-300'><Link onClick={closeMenu} to="/createplan">CREATE YOUR PLAN</Link></li>
           </ul>
         </nav>
       )}

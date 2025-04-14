@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Createplan from './pages/Createplan';
+import Footer from './components/Footer';
 
 const AppContext = createContext()
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/createplan' element={<Createplan/>}/>
       </Routes>
+      <Footer />
     </AppContext.Provider>
   )
 }
