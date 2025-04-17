@@ -1,5 +1,6 @@
 import React from 'react'
 import CreatePlanSteps from '../components/createplan/CreatePlanSteps';
+import PlanForm from '../components/createplan/PlanForm';
 
 const Createplan = () => {
   return (
@@ -9,6 +10,7 @@ const Createplan = () => {
         <p className='text-gray-300 sm:max-w-[400px]'>Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
       </div>
       <CreatePlanSteps />
+      <PlanForm />
     </div>
   )
 }

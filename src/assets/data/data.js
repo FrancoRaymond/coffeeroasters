@@ -74,3 +74,96 @@ export const steps = [
         discription: 'We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.'
     },
 ]
+
+export const questions = [
+    {
+        id: 1,
+        question: "How do you drink your coffee?",
+        options: [
+            {
+                name : 'Capsule',
+                discription : 'Compatible with nespresso systems and similar brewers.'
+            },
+            {
+                name : 'Filter',
+                discription : 'For pour over or dip methods like aeropress, chemex and v60'
+            },
+            {
+                name : 'Espresso',
+                discription : 'Dense and finely ground beans for an intense, flavourful experience.'
+            }
+        ]
+    },
+    {
+        id: 2,
+        question: "What type of coffee?",
+        options: [
+            {
+                name : 'Single origin',
+                discription : 'Distinct, high quality coffe from a specific family-owned farm.'
+            },
+            {
+                name : 'Decaf',
+                discription : 'Just like regular coffee, except the caffeine has been removed.'
+            },
+            {
+                name : 'Blended',
+                discription : 'Combination of two or three dark roasted beans of organic coffees.'
+            }
+        ]
+    },
+    {
+        id: 3,
+        question: "How much would you like?",
+        options: [
+            {
+                name : '250g',
+                discription : 'Perfect option for the solo drinker. Yields about 12 delicious cups.'
+            },
+            {
+                name : '500g',
+                discription : 'Perfect option for for a couple. Yields about 40 delectable cups.'
+            },
+            {
+                name : '1000g',
+                discription : 'Perfect for offices and events. Yields about 90 delightful cups.'
+            }
+        ]
+    },
+    {
+        id: 4,
+        question: "Want us to grind them?",
+        options: [
+            {
+                name : 'Wholebean',
+                discription : 'Best choice if you cherish the full sensory epxerience'
+            },
+            {
+                name : 'Filter',
+                discription : 'For drip or pour-over coffee methods such as v60 or aeropress'
+            },
+            {
+                name : 'Cafetiere',
+                discription : 'Course ground beans spcially suited for french press coffee.'
+            }
+        ]
+    },
+    {
+        id: 5,
+        question: "How often should we deliver?",
+        options: [
+            {
+                name : 'Every week',
+                discription : '$14.00 per shipment. includes free first-class shipping.'
+            },
+            {
+                name : 'Every 2 weeks',
+                discription : '$17.25 per shipment. Includes free priority shipping.'
+            },
+            {
+                name : 'Every month',
+                discription : '$22.50 per shipment. Includes free priority shipping.'
+            }
+        ]
+    }
+] 
