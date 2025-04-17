@@ -26,7 +26,7 @@ const Howitworks = () => {
         }
       </div>
       <Link to="/createplan">
-        <button className='my-20 flex mx-auto'>Create your plan</button>
+        <button className='mt-20 flex mx-auto'>Create your plan</button>
       </Link>
     </div>
   )
