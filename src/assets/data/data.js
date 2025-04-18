@@ -144,7 +144,7 @@ export const questions = [
             },
             {
                 name : 'Cafetiere',
-                discription : 'Course ground beans spcially suited for french press coffee.'
+                discription : 'Course ground beans specially suited for french press coffee.'
             }
         ]
     },
