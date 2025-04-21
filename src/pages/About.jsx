@@ -2,7 +2,7 @@ import React from 'react'
 import Commitment from '../components/about/Commitment'
 import Quality from '../components/about/Quality'
 import ScrollTop from '../components/ScrollTop'
-
+import Locations from '../components/about/Locations'
 const About = () => {
   return (
     <div className='px-2 sm:px-5 md:px-10 lg:px-24'>
@@ -13,6 +13,7 @@ const About = () => {
     </div>
     <Commitment />
     <Quality />
+    <Locations />
     </div>
   )
 }
