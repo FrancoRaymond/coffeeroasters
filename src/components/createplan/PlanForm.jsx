@@ -11,16 +11,17 @@ const PlanForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Order confirmed!");  
+    const summary = document.getElementById('summary').innerText
+    alert("Order confirmed!" + summary);  
   };
 
   return (
     <div className='mt-20 lg:flex lg:gap-10'>
-      <div className='text-xl text-gray-400 hidden lg:block lg:w-[30%] px-5'>
-        <h2 className='pb-4 border-b border-gray-400'>01 Preferences</h2>
-        <h2 className='py-4 border-b border-gray-400'>02 Bean Type</h2>
-        <h2 className='py-4 border-b border-gray-400'>03 Quantity</h2>
-        <h2 className='py-4 border-b border-gray-400'>04 Grind Option</h2>
+      <div className='text-xl text-[var(--color-secondary)] hidden lg:block lg:w-[30%] px-5'>
+        <h2 className='pb-4 border-b border-[var(--color-secondary)]'>01 Preferences</h2>
+        <h2 className='py-4 border-b border-[var(--color-secondary)]'>02 Bean Type</h2>
+        <h2 className='py-4 border-b border-[var(--color-secondary)]'>03 Quantity</h2>
+        <h2 className='py-4 border-b border-[var(--color-secondary)]'>04 Grind Option</h2>
         <h2 className='pt-4 '>05 Deliveries</h2>
       </div>
       <div className='lg:grow lg:w-[65%]'>
@@ -28,14 +29,14 @@ const PlanForm = () => {
           {
             questions.map(q => (
               <div key={q.id} className=''>
-                <h2 className="text-xl font-medium mb-3 text-gray-500 sm:text-2xl md:text-4xl">{q.question}</h2>
+                <h2 className="text-xl font-medium mb-3 text-[var(--color-third)] sm:text-2xl md:text-4xl">{q.question}</h2>
                 <div className="flex gap-4 flex-col md:grid md:grid-cols-3 mt-8">
                   {
                     q.options.map(option => (
                       <div
                         key={option.name + q.id}
                         onClick={() => handleSelect(q.id, option.name)}
-                        className={`cursor-pointer py-5 px-3.5 md:py-8 md:px-5 rounded-lg text-gray-700 ${answers[q.id] === option.name ? "bg-[#0e8684] text-white" : "bg-gray-200"}`}
+                        className={`cursor-pointer py-5 px-3.5 md:py-8 md:px-5 rounded-lg text-gray-700 ${answers[q.id] === option.name ? "bg-[var(--color-accent)] text-white" : "bg-gray-200"}`}
                       >
                         <h3 className='text-lg md:text-2xl'>{option.name}</h3>
                         <p className='mt-2'>{option.discription}</p>

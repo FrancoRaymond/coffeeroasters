@@ -29,16 +29,16 @@ const Navbar = () => {
         animate={isMenuOpen ? "visible" : "hidden"}
         variants={menuVariants}
         transition={{ duration: 0.5, ease: "easeInOut" }} 
-        className={`${size < 640 ? isMenuOpen ? 'activeMenu absolute block top-14 h-screen left-0 right-0 mx-auto w-full' : 'hidden' : ''}`}
+        className={`${size < 640 ? isMenuOpen ? 'activeMenu absolute block top-[52px] h-screen left-0 right-0 mx-auto w-full' : 'hidden' : ''}`}
       >
-        <ul className={`flex gap-8 ${size < 640 ? 'flex-col items-start px-2 h-fit w-full text-white' : 'flex-row text-gray-400'}`}>
-          <li><Link onClick={closeMenu} to="/home">Home</Link></li> 
+        <ul className={`flex gap-8 ${size < 640 ? 'flex-col items-center px-2 h-fit w-full text-white' : 'flex-row text-[var(--color-secondary)]'}`}>
+          <li><Link onClick={closeMenu} to="/home">HOME</Link></li> 
           <li><Link onClick={closeMenu} to="/about">ABOUT</Link></li>
           <li><Link onClick={closeMenu} to="/createplan">CREATE YOUR PLAN</Link></li>
         </ul>
       </motion.nav>
       ) : (
-        <nav className={`${size < 640 ? isMenuOpen ? 'absolute block top-14 h-screen left-0 right-0 mx-auto w-full' : 'hidden' : ''}`}>
+        <nav>
           <ul className={`flex gap-5 ${size < 640 ? 'flex-col items-center h-fit w-full' : 'flex-row'}`}>
             <li className='hover:text-[#0e8684] transition duration-300'><Link onClick={closeMenu} to="/home">HOME</Link></li>
             <li className='hover:text-[#0e8684] transition duration-300'><Link onClick={closeMenu} to="/about">ABOUT</Link></li>

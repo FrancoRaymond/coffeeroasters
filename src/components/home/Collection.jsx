@@ -4,7 +4,7 @@ import { collection } from '../../assets/data/data'
 const Collection = () => {
   return (
     <div className='text-center mb-10'>
-        <h1 className='collectionHeading text-4xl sm:text-8xl lg:text-[144px] xl:text-[180px] text-transparent bg-clip-text bg-gradient-to-b from-gray-500 to-gray-200'>our collection</h1>
+        <h1 className='collectionHeading text-4xl sm:text-8xl lg:text-[144px] xl:text-[180px] text-transparent bg-clip-text bg-gradient-to-b from-[var(--color-third)] to-gray-200'>our collection</h1>
         <div className='flex flex-col gap-20 sm:gap-5 md:grid md:grid-cols-2 lg:grid-cols-4 pt-20 lg:pt-0 lg:-mt-10'>
             {
                 collection.map(item => (
